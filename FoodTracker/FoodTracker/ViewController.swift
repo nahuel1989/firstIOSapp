@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITextFieldDelegate  {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib
         // Handle the text field’s user input through delegate callbacks.
+        // Asignamos esta misma clase como delegada del objeto nameTextField
         nameTextField.delegate = self
     }
     
