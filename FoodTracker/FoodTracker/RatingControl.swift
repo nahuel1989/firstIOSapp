@@ -23,6 +23,9 @@ class RatingControl: UIView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
+        let filledStarImage = UIImage(named: "filledStar")
+        let emptyStarImage = UIImage(named: "emptyStar")
+        
         for _ in 0..<5 {
             let button = UIButton(frame: CGRect(x: 0, y: 0, width: 44, height: 44))
             button.backgroundColor = UIColor.redColor()
