@@ -10,6 +10,7 @@ import UIKit
 
 class OptionTableViewController: UITableViewController {
     // MARK: Properties
+    var textoSeleccionado=""
     
     var options = [String]()
     
@@ -71,6 +72,11 @@ class OptionTableViewController: UITableViewController {
         return true
     }
     */
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        //self .dismissViewControllerAnimated(true, completion: nil)
+        let selectedOption = options[indexPath.row]
+        self.textoSeleccionado=selectedOption
+    }
 
     /*
     // Override to support editing the table view.
@@ -110,7 +116,7 @@ class OptionTableViewController: UITableViewController {
     */
     
     @IBAction func unwindToMeal(sender: UIStoryboardSegue) {
-        
+         print("Entre al unwind")
     }
 
 

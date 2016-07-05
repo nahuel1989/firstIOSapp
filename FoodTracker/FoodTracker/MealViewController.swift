@@ -10,16 +10,12 @@ import UIKit
 
 class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
 // MARK: Properties
-    
+    @IBOutlet weak var optionTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
-    /*
-     This value is either passed by `MealTableViewController` in `prepareForSegue(_:sender:)`
-     or constructed as part of adding a new meal.
-     */
     var meal: Meal?
     
     override func viewDidLoad() {
@@ -28,6 +24,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         // Handle the text field’s user input through delegate callbacks.
         // Asignamos esta misma clase como delegada del objeto nameTextField
         nameTextField.delegate = self
+        optionTextField.delegate = self
         
         // Set up views if editing an existing Meal.
         if let meal = meal {
@@ -44,18 +41,25 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 // MARK: UITextFieldDelegate
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         // Hide the keyboard.
-        textField.resignFirstResponder()
-        return true
+        if(textField.tag==1){
+            textField.resignFirstResponder()
+            return true
+        }
+        return false
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        checkValidMealName()
-        navigationItem.title = textField.text
+        if(textField.tag==1){
+            checkValidMealName()
+            navigationItem.title = textField.text
+        }
     }
     
     func textFieldDidBeginEditing(textField: UITextField) {
         // Disable the Save button while editing.
-        saveButton.enabled = false
+        if(textField.tag==1){
+            saveButton.enabled = false
+        }
     }
     
     func checkValidMealName() {
@@ -123,6 +127,11 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         imagePickerController.delegate = self
         
         presentViewController(imagePickerController, animated: true, completion: nil)
+    }
+    
+    @IBAction func unwindToMeal(sender: UIStoryboardSegue) {
+        print("Entre al unwind")
+        
     }
 }
 
