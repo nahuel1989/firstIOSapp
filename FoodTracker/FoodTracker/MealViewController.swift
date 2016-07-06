@@ -12,6 +12,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
 // MARK: Properties
     @IBOutlet weak var optionTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var paisesTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
     @IBOutlet weak var saveButton: UIBarButtonItem!
@@ -108,6 +109,18 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
             // Set the meal to be passed to MealTableViewController after the unwind segue.
             meal = Meal(name: name, photo: photo, rating: rating)
         }
+        if segue.identifier == "continente"
+        {
+            if let destinationVC = segue.destinationViewController as? OptionTableViewController {
+                destinationVC.categoria = "continente"
+            }
+        }
+        if segue.identifier == "paises"
+        {
+            if let destinationVC = segue.destinationViewController as? OptionTableViewController {
+                destinationVC.categoria = "paises"
+            }
+        }
     }
     
 // MARK: Actions
@@ -130,8 +143,13 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     @IBAction func unwindToMeal(sender: UIStoryboardSegue) {
-        print("Entre al unwind")
-        
+        let source = sender.sourceViewController as? OptionTableViewController
+        let variable = source?.textoSeleccionado
+        if(source?.categoria=="paises"){
+            self.paisesTextField.text=variable
+        }else if(source?.categoria=="continente"){
+            self.optionTextField.text=variable
+        }
     }
 }
 

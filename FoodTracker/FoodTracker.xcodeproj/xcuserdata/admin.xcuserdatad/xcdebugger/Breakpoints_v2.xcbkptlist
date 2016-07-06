@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoodTracker/OptionTableViewController.swift"
-            timestampString = "489443310.031667"
+            timestampString = "489503999.815357"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "tableView(_:cellForRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,28 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoodTracker/OptionTableViewController.swift"
-            timestampString = "489443310.031667"
+            timestampString = "489503999.815357"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
             landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FoodTracker/OptionTableViewController.swift"
-            timestampString = "489443310.031667"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "unwindToMeal(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoodTracker/MealViewController.swift"
-            timestampString = "489443310.031667"
+            timestampString = "489504214.983425"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "prepareForSegue(_:sender:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -97,52 +81,20 @@
             endingLineNumber = "130"
             landmarkName = "unwindToMealList(_:)"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FoodTracker.MealTableViewController.unwindToMealList (__ObjC.UIStoryboardSegue) -&gt; ()"
-                  moduleName = "FoodTracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Documents/nahuel/firstIOSapp/FoodTracker/FoodTracker/MealTableViewController.swift"
-                  timestampString = "489443311.153055"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130"
-                  offsetFromSymbolStart = "19">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FoodTracker.MealTableViewController.unwindToMealList (__ObjC.UIStoryboardSegue) -&gt; ()"
-                  moduleName = "FoodTracker"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/admin/Documents/nahuel/firstIOSapp/FoodTracker/FoodTracker/MealTableViewController.swift"
-                  timestampString = "489443311.153696"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "130"
-                  endingLineNumber = "130"
-                  offsetFromSymbolStart = "187">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoodTracker/OptionTableViewController.swift"
-            timestampString = "489443288.349168"
+            timestampString = "489503999.815357"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
             landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -150,15 +102,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FoodTracker/MealViewController.swift"
-            timestampString = "489443296.883158"
+            timestampString = "489504214.983425"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "unwindToMeal(_:)"
             landmarkType = "5">
          </BreakpointContent>

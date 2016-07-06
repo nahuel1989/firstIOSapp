@@ -75,8 +75,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="WWm-wl-DX8">
-                                <rect key="frame" x="20" y="84" width="560" height="508"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="WWm-wl-DX8">
+                                <rect key="frame" x="20" y="84" width="560" height="510"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N7R-E0-U3x">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
@@ -84,7 +84,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="wqj-ja-b3s">
-                                        <rect key="frame" x="120" y="42" width="320" height="320"/>
+                                        <rect key="frame" x="120" y="34" width="320" height="320"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="wqj-ja-b3s" secondAttribute="height" multiplier="1:1" id="RvM-CN-mf2"/>
@@ -94,30 +94,52 @@
                                         </connections>
                                     </imageView>
                                     <view contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="x0h-LI-sNi" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="160" y="374" width="240" height="44"/>
+                                        <rect key="frame" x="160" y="358" width="240" height="44"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eGv-Eh-5qy">
-                                        <rect key="frame" x="106" y="430" width="348" height="78"/>
+                                        <rect key="frame" x="106" y="406" width="348" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tipo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTc-U3-LmV">
-                                                <rect key="frame" x="8" y="28" width="73" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Continente:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTc-U3-LmV">
+                                                <rect key="frame" x="8" y="7" width="73" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yk9-bg-XQU">
-                                                <rect key="frame" x="271" y="25" width="69" height="30"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <segue destination="mWF-XV-kCx" kind="show" id="56h-db-JRb"/>
-                                                </connections>
-                                            </button>
-                                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Er-Ul-kgh">
-                                                <rect key="frame" x="89" y="25" width="181" height="30"/>
+                                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Er-Ul-kgh">
+                                                <rect key="frame" x="89" y="4" width="181" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yk9-bg-XQU">
+                                                <rect key="frame" x="89" y="3" width="181" height="30"/>
+                                                <connections>
+                                                    <segue destination="mWF-XV-kCx" kind="show" identifier="continente" id="56h-db-JRb"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eds-Mz-FDk">
+                                        <rect key="frame" x="106" y="460" width="348" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Paises:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZM-V6-eRd">
+                                                <rect key="frame" x="8" y="4" width="73" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cdq-xH-OCU">
+                                                <rect key="frame" x="89" y="1" width="181" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2T4-8a-abB">
+                                                <rect key="frame" x="89" y="0.0" width="181" height="30"/>
+                                                <connections>
+                                                    <segue destination="mWF-XV-kCx" kind="show" identifier="paises" id="Ioq-UA-0Vm"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
@@ -150,6 +172,7 @@
                     <connections>
                         <outlet property="nameTextField" destination="N7R-E0-U3x" id="uKV-ch-gaB"/>
                         <outlet property="optionTextField" destination="5Er-Ul-kgh" id="8d7-wG-MEb"/>
+                        <outlet property="paisesTextField" destination="cdq-xH-OCU" id="axd-8U-hAg"/>
                         <outlet property="photoImageView" destination="wqj-ja-b3s" id="OQU-H8-XuB"/>
                         <outlet property="ratingControl" destination="x0h-LI-sNi" id="sdg-jN-mKW"/>
                         <outlet property="saveButton" destination="yM9-R9-kjC" id="QNG-CI-xCW"/>
@@ -187,7 +210,7 @@
                                                 <accessibilityTraits key="traits" button="YES"/>
                                             </accessibility>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -197,7 +220,6 @@
                                 </accessibility>
                                 <connections>
                                     <outlet property="optionText" destination="Y2Q-gO-xg1" id="8Ea-Rb-goB"/>
-                                    <segue destination="31v-tc-VFn" kind="unwind" unwindAction="unwindToMeal:" id="APn-92-XeY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -206,6 +228,9 @@
                             <outlet property="delegate" destination="mWF-XV-kCx" id="HBd-K2-rcF"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="31v-tc-VFn" kind="unwind" identifier="unwindYo" unwindAction="unwindToMeal:" id="TUh-yr-OZh"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0G-XR-x7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="31v-tc-VFn" userLabel="Exit" sceneMemberID="exit"/>
@@ -253,6 +278,7 @@
         <image name="defaultPhoto" width="160" height="160"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="Ioq-UA-0Vm"/>
         <segue reference="IQC-tR-2G5"/>
     </inferredMetricsTieBreakers>
 </document>

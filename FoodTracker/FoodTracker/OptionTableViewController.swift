@@ -12,14 +12,29 @@ class OptionTableViewController: UITableViewController {
     // MARK: Properties
     var textoSeleccionado=""
     
-    var options = [String]()
+    var categoria=""
+    
+    var options =  [String]()
     
     func loadSampleOptions() {
-        let option1 = "Texto1"
+        let option1: String
         
-        let option2 = "Texto2"
+        let option2: String
         
-        let option3 = "Texto3"
+        let option3: String
+        if(self.categoria=="paises"){
+            option1 = "Argentina"
+            
+            option2 = "Brasil"
+            
+            option3 = "España"
+        }else{
+            option1 = "Asia"
+            
+            option2 = "America"
+            
+            option3 = "Europa"
+        }
         
         options += [option1, option2, option3]
     }
@@ -76,6 +91,7 @@ class OptionTableViewController: UITableViewController {
         //self .dismissViewControllerAnimated(true, completion: nil)
         let selectedOption = options[indexPath.row]
         self.textoSeleccionado=selectedOption
+        self.performSegueWithIdentifier("unwindYo", sender: self)
     }
 
     /*
@@ -115,9 +131,6 @@ class OptionTableViewController: UITableViewController {
     }
     */
     
-    @IBAction func unwindToMeal(sender: UIStoryboardSegue) {
-         print("Entre al unwind")
-    }
 
 
 }
